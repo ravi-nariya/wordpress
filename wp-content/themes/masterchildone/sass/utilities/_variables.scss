@@ -1,0 +1,87 @@
+/* Breakpoints */
+
+$breakpoint-mobile: 375px;
+$breakpoint-mobile-wide: 576px;
+$breakpoint-tablet: 768px;
+$breakpoint-tablet-wide: 1025px;
+$breakpoint-desktop: 1200px;
+$breakpoint-desktop-wide: 1440px;
+
+/* Container Sizes */
+
+$container-size: 1360px;
+$gutter-size : 8px;
+
+/* Fonts */
+
+$font-text: 'open-sans',Helvetica,sans-serif;
+$font-weight-book: 400;
+$font-weight-bold: 700;
+$font-weight-light: 300;
+$font-light: 'Gotham-Light',Helvetica,sans-serif;
+$font-bold: 'Gotham-Bold',Helvetica,sans-serif;
+$font-book: 'Gotham-Book',Helvetica,sans-serif;
+$font-medium: 'Gotham-Medium',Helvetica,sans-serif;
+
+/* General Colors */
+
+$color-orange: #FF4913;
+$color-dark-ornage: #E03300;
+$color-black: #000000;
+$color-white: #FFFFFF;
+$color-red: #EE1F37;
+$color-dark-red: #CC0F25;
+$color-yellow: #FFDA00;
+$color-burgundy: #45002B;
+$color-teal: #0081A0;
+$color-darkblue: #00164A;
+$color-lightblue: #81D4F7;
+$color-lightgray: #F1F4F4;
+$color-darkgray: #8F8F8F;
+$color-extradark : #232323;
+
+/* Colors */
+
+$color-primary: $color-orange;
+$color-secondary: $color-black;
+$color-tertiary: $color-white;
+$color-text-dark: $color-black;
+$color-text-light: $color-white;
+
+$color-background-dark: $color-black;
+$color-background-light: $color-white;
+
+$color-button-background: $color-orange;
+$color-button-text: $color-white;
+$color-button-inverted-background: $color-white;
+$color-button-inverted-text: $color-orange;
+
+$color-menu-link: $color-white;
+
+/* Font Size */
+
+$primary-fontsize: 16px;
+$primary-fontsize-lg: 18px;
+
+
+/* Misc */
+
+$heading-selectors: 'h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6';
+$input-selectors: '[type="tel"], [type="url"], [type="text"], [type="date"], [type="email"], [type="search"], [type="number"], [type="password"], textarea, select';
+
+$safe-padding: 20px;
+$safe-margin: 20px;
+$container-max-width: 1920px;
+$gutter-width: 20px;
+
+$container-column-width: 140px; // includes gutter
+$container-medium-content-max-width: $container-column-width * 8;
+$container-content-max-width: $container-column-width * 10;
+$container-padding-desktop: 20px;
+$container-padding-tablet: 20px;
+$container-padding-mobile: 20px;
+
+$button-width: 150px;
+
+$indent-padding: 40px;
+$indent-padding-mobile: 24px;

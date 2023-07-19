@@ -1,0 +1,76 @@
+// Shorthands to help writing easuer to understand code
+
+@mixin prefix($property, $val){
+  -webkit-#{$property}: $val;
+  -moz-#{$property}: $val;
+  -ms-#{$property}: $val;
+  #{$property}: $val;
+}
+
+
+@mixin center(
+  $max-width: $container-max-width,
+  $padding: $container-padding-mobile
+) {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: $max-width;
+  padding-left: $padding;
+  padding-right: $padding;
+}
+
+@mixin maxWidthContainer($maxWidth: '') {
+  @if $maxWidth {
+
+    @include center($max-width: $maxWidth, $padding: 0);
+
+    @media (min-width: $breakpoint-tablet) {
+      @include center($max-width: $maxWidth, $padding: 0);
+    }
+
+    @media (min-width: $breakpoint-desktop-wide) {
+      @include center($max-width: $maxWidth, $padding: 0);
+    }
+  } @else {
+
+    @include center;
+
+    @media (min-width: $breakpoint-tablet) {
+      @include center($padding: 0);
+    }
+
+    @media (min-width: $breakpoint-desktop-wide) {
+      @include center($padding: 0);
+    }
+  }
+}
+
+@mixin lineClamp($lines) {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-line-clamp: $lines;
+  -moz-line-clamp: $lines;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  @supports (-webkit-line-clamp: 1) {
+    display: -webkit-box;
+    -webkit-line-clamp: $lines;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}

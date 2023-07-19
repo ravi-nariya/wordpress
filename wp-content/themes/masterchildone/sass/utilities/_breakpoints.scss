@@ -1,0 +1,68 @@
+$breakpoints: (
+    'mobile': $breakpoint-mobile,
+    'mobile-wide': $breakpoint-mobile-wide,
+    'tablet': $breakpoint-tablet,
+    'tablet-wide': $breakpoint-tablet-wide,
+    'desktop': $breakpoint-desktop,
+    'desktop-wide': $breakpoint-desktop-wide,
+    ) !default;
+
+@mixin mobile {
+    @media only screen and (min-width: $breakpoint-mobile) {
+        @content;
+    }
+}
+
+@mixin mobile-max {
+    @media only screen and (max-width: ($breakpoint-mobile-wide - 1)) {
+        @content;
+    }
+}
+
+@mixin mobile-wide {
+    @media only screen and (min-width: $breakpoint-mobile-wide) {
+        @content;
+    }
+}
+
+@mixin mobile-wide-max {
+    @media only screen and (max-width: ($breakpoint-tablet - 1)) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media only screen and (min-width: $breakpoint-tablet) {
+        @content;
+    }
+}
+
+@mixin tablet-wide {
+    @media only screen and (min-width: $breakpoint-tablet-wide) {
+        @content;
+    }
+}
+
+@mixin tablet-wide-max {
+    @media only screen and (max-width: ($breakpoint-tablet-wide - 1)) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media only screen and (min-width: $breakpoint-desktop) {
+        @content;
+    }
+}
+
+@mixin desktop-max {
+    @media only screen and (max-width: ($breakpoint-desktop - 1)) {
+        @content;
+    }
+}
+
+@mixin desktop-wide {
+    @media only screen and (min-width: $breakpoint-desktop-wide) {
+        @content;
+    }
+}

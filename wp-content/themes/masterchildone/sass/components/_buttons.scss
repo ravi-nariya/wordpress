@@ -1,0 +1,25 @@
+.btn {
+    @include prefix(transition, 0.3s all);
+
+    &.btn-secondary {
+       
+        &:hover {
+        }
+    }
+
+    &.btn-tertiary {
+        
+
+        &:hover {
+        }
+    }
+
+    &.btn-outlined {
+
+        &:hover {
+            
+        }
+
+        
+    }
+}

@@ -1,0 +1,68 @@
+html,
+body,
+p,
+ol,
+ul,
+li,
+dl,
+dt,
+dd,
+blockquote,
+figure,
+fieldset,
+form,
+legend,
+textarea,
+pre,
+iframe,
+hr,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	padding: 0;
+	margin: 0;
+}
+
+html {
+	box-sizing: border-box;
+}
+
+body.custom-background {
+	background-color: transparent !important;
+}
+
+body {
+	font-family: $font-book;
+	font-size: $primary-fontsize;
+	font-weight: $font-weight-book;
+
+	@include tablet {
+		font-size: $primary-fontsize-lg;
+		line-height: 22px;
+    }
+}
+
+* {
+	box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+	 @include prefix(transition,0.3s all);
+
+	&:hover {
+		 @include prefix(transition,0.3s all);
+	}
+}
+
+ul, ol, .wp-block ul {
+	margin: 0;
+	padding: 0;
+
+	li {
+		list-style-type: none;
+	}
+}

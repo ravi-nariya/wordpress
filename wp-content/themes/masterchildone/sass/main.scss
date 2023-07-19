@@ -1,0 +1,33 @@
+// WP-SCSS Plugin for compile
+
+// Utitlities
+@import
+  'utilities/fonts.scss',
+  'utilities/variables.scss',
+  'utilities/mixins.scss',
+  'utilities/breakpoints.scss';
+
+// Base
+@import
+  'base/reset.scss',
+  'base/typography.scss';
+
+// Components
+@import
+  'components/buttons.scss',
+  'components/modal.scss',
+  'components/form.scss',
+  'components/carousele.scss';
+
+// Global
+@import
+  'layout/global.scss';
+
+// Layout
+@import
+  'layout/header.scss',
+  'layout/footer.scss';
+
+// Pages
+@import
+  'pages/home.scss';
